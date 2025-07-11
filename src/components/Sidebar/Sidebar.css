@@ -1,0 +1,60 @@
+.sidebar {
+  background: #fff;
+  width: 200px;               /* expanded */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+
+
+.shortcut-links img{
+    width:20px;
+    margin-right: 20px;
+}
+
+.side-link {
+  display: flex;
+  flex-direction: row;   /* ✅ ensures icon and text are side-by-side */
+  align-items: center;   /* ✅ vertically align icon and text */
+  gap: 10px;             /* ✅ adds spacing between icon and text */
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width:85%;
+}
+
+
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.subscribed-list img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.small-sidebar {
+  width: 70px;           /* Show only icons */
+}
+
+.small-sidebar .side-link p {
+  display: none;
+}
+
+.small-sidebar h3{
+    display: none;
+}
